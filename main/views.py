@@ -9,7 +9,7 @@ def index(request) -> HttpResponse:
         'content': 'Главная страница - Home',
         'list': ['first', 'second'],
         'dict': {'first': 1},
-        'bool': False
+        'is_authenticated': False
         
         }   
     return render(request, 'main/index.html', context)
