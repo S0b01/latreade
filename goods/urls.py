@@ -9,3 +9,4 @@ urlpatterns = [
     path('product/', views.product, name='product'),
 
 ]
+ 
