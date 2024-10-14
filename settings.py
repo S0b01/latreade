@@ -80,12 +80,15 @@ WSGI_APPLICATION = 'latreade.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "mydbserver",
         "USER": "dima",
+        "NAME": "mydbserver",
         "PASSWORD": "123456",
         "HOST": "localhost",
         "PORT": "5432",
-    }
+        "TEST": {
+            "NAME": "mydbserver",
+        },
+    },
 }
 
 
